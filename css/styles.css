@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px; }
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+
+/*  ===================================================
+    ------------------    HEADER     ------------------
+    =================================================== */
+header {
+  width: 100%;
+  background: url('../img/bg.jpg') #281a0c;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center 0; }
+
+header .container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 700px; }
+
+header nav {
+  width: 100%;
+  height: 300px;
+  text-align: right; }
+
+header nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: #FFF;
+  font-weight: 300;
+  font-size: 20px;
+  margin: 40px 20px;
+  position: relative; }
+  header nav a:hover {
+    text-decoration: underline; }
+
+header .texto {
+  width: 100%;
+  position: absolute;
+  top: -50%;
+  text-align: left;
+  color: #fff; }
+
+header .texto .titulo {
+  font-size: 50px;
+  font-weight: 600; }
+  header .texto .titulo span {
+    font-weight: 300; }
+
+header .texto h3{
+  width: 80%;
+  font-size: 25px;
+  font-weight: 300;
+  font-style: italic; }
+
+
+
+/*  ===================================================
+    ------------------   Acerca De   ------------------
+    =================================================== */
+.main {
+  background: url(../img/bg-textura.png);
+  background-repeat: repeat; }
+
+.main .acerca-de {
+  width: 100%; }
+
+.main .acerca-de .container{
+  overflow: visible;
+  position: relative; }
+
+.main .acerca-de .foto {
+  width: 80%;
+  position: absolute;
+  left: 0;
+  top: -50px;
+  box-shadow: 0 0 15px rgba(000, 000, 000, 0.3);
+  z-index: 0; }
+
+.main .acerca-de .foto img {
+  width: 100%;
+  vertical-align: top; }
+
+.main .acerca-de article {
+  width: 50%;
+  z-index: 1;
+  position: absolute;
+  padding: 40px;
+  background: #fff;
+  right: 0px;
+  top: 500px;
+  box-shadow: 0 0 15px rgba(000, 000, 000, 0.3); }
+
+.main .acerca-de article h3 {
+  font-weight: 300;
+  font-size: 50px;
+  margin-bottom: 40px; }
+
+.main .acerca-de article p {
+  line-height: 28px;
+  margin-bottom: 15px; }
+
+
+
+/*  ===================================================
+    ------------------      Menu     ------------------
+    =================================================== */
+
+.main .menu {
+  padding-top: 570px;
+  margin-bottom: 50px; }
+
+.main .menu h3 {
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center; 
+  padding-bottom: 40px; }
+
+.main .menu .container-carta-1,
+.main .menu .container-carta-2 {
+  padding: 10px;
+  border: 1px solid #000; }
+
+.main .menu .container-carta-2 {
+  display: flex;
+  flex-wrap: wrap; }
+
+
+.main .menu article {
+  width: 50%;
+  padding: 20px; }
+
+.main .menu article .carta {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px; }
+
+.main .menu article .lista-carta {
+  height: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 4px dotted #000; }
+
+
+.main .menu article .lista-carta .nombre,
+.main .menu article .lista-carta .precio {
+  font-size: 20px;
+  margin-bottom: 15px; }
+
+
+.main .menu article .lista-carta .descripcion {
+  width: 100%;
+  font-size: 16px;
+  color: #676767; }
+
+
+
+/*  ===================================================
+    ------------------    Galeria    ------------------
+    =================================================== */
+.main .galeria {
+  display: flex;
+  flex-wrap: wrap; }
+
+.main .galeria .foto {
+  width: 25%; }
+
+.main .galeria .foto img {
+  width: 100%;
+  vertical-align: top;
+  opacity: 0.7;
+  transition: all 0.3s; }
+
+.main .galeria .foto:hover img {
+  opacity: 1; }
+
+
+
+/*  ===================================================
+    ------------------  Informacion  ------------------
+    =================================================== */
+.main .informacion {
+  padding: 60px 0;
+  background: #fff; }
+
+.main .informacion .container {
+  display: flex;
+  flex-wrap: wrap; }
+
+.main .informacion h3 {
+  width: 100%;
+  font-weight: 300;
+  font-size: 40px;
+  margin-bottom: 40px;
+  text-align: center; }
+
+.main .informacion .direccion {
+  width: 50%; }
+
+.main .informacion .direccion .calle,
+.main .informacion .direccion .telefono {
+  margin-bottom: 10px; }
+
+.main .informacion .horarios {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center; }
+
+.main .informacion .horarios h4 {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 17px; }
+
+
+
+/*  ===================================================
+    ------------------      Maps     ------------------
+    =================================================== */
+.main .maps {
+  width: 100%; }
+
+.main .maps iframe {
+  width: 100%;
+  max-height: 600px; }
+
+
+
+/*  ===================================================
+    ------------------     Footer    ------------------
+    =================================================== */
+footer {
+  padding: 25px;
+  background-color: #17202a;
+  color: #eaecee;
+  text-align: center; }
+
+footer .autor {
+  margin-bottom: 15px; }
+
+footer .derechos .par-1{
+  margin-bottom: 5px;
+}
+
+
+
+/*  ===================================================
+    ------------------     MediaQueries    ------------------
+    =================================================== */
+@media screen and (max-width: 800px){
+  /* <<<<<<<<<< HEADER >>>>>>>>>> */
+  header nav {
+    text-align: center;
+    height: 200px; }
+
+  header nav a {
+    margin-top: 25px;
+    margin-bottom: 0;
+    position: static; }
+
+  header .texto {
+    height: 300px; }
+
+  header .texto .titulo {
+    font-size: 40px; }
+
+  header .texto h3 {
+    font-size: 20px; }
+
+
+  /* <<<<<<<<<< Acerca de >>>>>>>>>> */
+  .main .acerca-de .foto {
+    width: 100%;
+    position: relative; }
+
+  .main .acerca-de article {
+    position: relative;
+    width: 100%;
+    top: -50px;
+    transform: translate(0px, 0); }
+
+
+  /* <<<<<<<<<< Menu >>>>>>>>>> */
+  .main .menu {
+    padding-top: 0; }
+
+  .main .menu article {
+    width: 100%; }
+
+  .main .menu article .carta {
+    margin-bottom: 25px; }
+
+
+  /* <<<<<<<<<< Galeria >>>>>>>>>> */
+  .main .galeria .foto {
+    width: 50%; }
+
+
+  /* <<<<<<<<<< Informacion >>>>>>>>>> */
+  .main .informacion .direccion {
+    text-align: center;
+    margin-bottom: 30px; }
+
+  .main .informacion .horarios {
+    justify-content: center; }
+
+  .main .informacion .horarios p {
+    margin: 0 15px;
+  }
+
+  .main .informacion .direccion,
+  .main .informacion .horarios {
+    width: 100%; }
+  
+
+  /* <<<<<<<<<< Maps >>>>>>>>>> */
+  .main .maps {
+    width: 90%;
+    margin: 0 auto; }
+    
+
+  /* <<<<<<<<<< Maps >>>>>>>>>> */
+  footer {
+    font-size: 13px; }
+
+}
+
+
+@media screen and (max-width: 400px) {
+  /* <<<<<<<<<< HEADER >>>>>>>>>> */
+  header .container {
+    width: 100%;
+  }
+
+  header{
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+
+  header nav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+
+  header nav a{
+    display: inline-block;
+    width: 50%;
+    background: rgba(000, 000, 000, 0.5);
+    margin: 0;
+    padding: 10px 0 10px 0;
+    border: none;
+    border-top: 1px solid rgba(111, 111, 111, 1);
+    border-bottom: 1px solid rgba(111, 111, 111, 1); }
+    header nav a:hover{
+      background: rgba(000, 000, 000, 0.2);
+      border-top: 1px solid rgba(111, 111, 111, 1);
+      border-bottom: 1px solid rgba(111, 111, 111, 1); }
+    
+    header nav .border {
+      border-right: 1px solid rgba(111, 111, 111, 1); }
+
+    header .texto {
+      width: 90%;
+      margin: 0 auto;
+      height: 400px;
+      padding-top: 90px; }
+
+    header .texto h3 {
+      width: 90%; }
+
+
+  /* <<<<<<<<<< Acerca de >>>>>>>>>> */
+  .main .acerca-de article h3 {
+    font-size: 40px; }
+
+  .main .acerca-de article p {
+    font-size: 15px; }
+
+
+  /* <<<<<<<<<< Menu >>>>>>>>>> */
+  .main .menu article .lista-carta .nombre,
+  .main .menu article .lista-carta .precio {
+    font-size: 18px;
+  }
+
+  .main .menu article .lista-carta .descripcion {
+    font-size: 14px;
+  }
+}
